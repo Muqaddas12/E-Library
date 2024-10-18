@@ -1,0 +1,82 @@
+.profile-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.edit-profile{
+    display: flex;
+    width: 100%;
+
+}
+
+.change-profile-image{
+  
+
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.change-profile-image h3{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.3vw;
+
+}
+
+#userimage{
+    cursor: pointer;
+    width: 10vw;
+    border-radius: 50%;
+
+}
+#edit-image{
+    width: 1.5vw;
+position: relative;
+cursor: pointer;
+right: 30%;
+}
+.change-profile-image input{
+margin-top: 3vh;
+width: 10vw;
+font-size: 1.3vw;
+border: none;
+border-radius: .5vw;
+cursor: pointer;
+
+}
+.edit-personal-details {
+    border: 1px solid black;
+    display: flex;
+   flex-direction: column;
+   width: 60%; /* Add some padding for better spacing */
+}
+.fields{
+      display: flex;
+
+    font-size: 1.3vw;
+    width: 100%;
+    padding: 10px; 
+}
+.labels h3{
+    margin-bottom: 23%;
+    font-size: 1.3vw;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.inputs input,select{
+    margin-bottom: 10%;
+    margin-left: 10%;
+    font-size: 1vw;
+}
+.inputs input::placeholder{
+    font-size: 1vw;
+}
+

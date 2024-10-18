@@ -1,0 +1,15 @@
+
+
+<% BooksData.forEach((book)=>{%>
+<div class="book-card">
+    <form action="#" method="post"> 
+      <div class="book-image">
+          <img src="../<%=book.imagepath  %>" alt="image not found">
+      </div>
+      <div class="book-title">  <p> <a href="/user/ReadBook?title=<%= encodeURIComponent(book.title) %>">
+      <%= book.title %>
+    </a></p></div>
+       <div class="book-author"> <p><%=book.author%></p></div>
+    </form>
+</div>
+<%}) %>

@@ -1,0 +1,35 @@
+.category{
+    max-width: 18%;
+    height: 40vh;
+    margin-left: 3vw;
+
+}
+.book-image{
+  background: rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    border-radius: 50%;
+}
+.book-image img{
+    height: 10rem;
+}
+.category-name{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 7vh;
+  }
+  .category-name p{
+ display: -webkit-box; /* Necessary for line clamping */
+    -webkit-box-orient: vertical; /* Set the box orientation */
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    overflow: hidden; /* Hide overflowed content */
+    font-size: 1.5vw;
+    font-weight: bold;
+  
+ margin-left: 3vw;
+ cursor: pointer;
+   
+  }

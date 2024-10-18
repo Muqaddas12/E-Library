@@ -1,0 +1,60 @@
+.support{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+
+}
+.support-title{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.support-title h1{
+    font-size: 3vw;
+}
+.support-form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.support-form label{
+font-size: large;
+}
+.support-form textarea,input{
+    width: 60%;
+    height: 5vh;
+    border-radius: .5vw;
+    border: none;
+    background-color: rgb(190, 182, 182);
+    color: black;
+    padding-left: 1vw;
+    font-size: 1.2vw;
+    margin-bottom: 2vh;
+}
+.support-form input::placeholder{
+    font-size: 1.2vw;
+    padding-left: 1vw;
+}
+.support-form textarea{
+    height: 15vh;
+    resize: none;
+    font-size: 1.2vw;
+
+}
+#support-submit{
+    margin-top: 4vh;
+    
+}
+
+#support-massage{
+    text-align: center;
+    font-size: larger;
+}
+

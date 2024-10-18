@@ -1,0 +1,50 @@
+user databse structure
+
+create table users(
+id int primary key auto_increment,
+firstname varchar(30),
+lastname varchar(30),
+dob varchar(10),
+email varchar(100),
+username varchar(16),
+mobile varchar(13) default null,
+password varchar(16),
+gender varchar(6),
+profileimage longblob,
+address varchar(100) default null
+);
+
+
+books database structure
+
+create table books (
+id int auto_increment primary key,
+ISBN varchar(50),
+title varchar(100),
+author varchar(50),
+genre varchar(30),
+imagepath varchar(200),
+filepath varchar(200),
+availability int default null
+)
+
+
+user problem database table structure
+
+create table userproblem(
+id int auto_increment primary key,
+name varchar(50),
+email varchar(100),
+problemname varchar(100),
+problemdiscription varchar(1000)
+)
+
+
+Books Category database structure
+
+create table bookscategory(
+id int auto_increment primary key,
+category varchar(100),
+imagepath varchar(100)
+
+);

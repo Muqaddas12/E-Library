@@ -1,0 +1,173 @@
+.signup-container {
+    border: 1px solid black; /* Border around the signup container */
+    width: 90%; /* Width adjusted for responsiveness */
+    max-width: 400px; /* Max width to prevent excessive stretching on large screens */
+    height: auto; /* Height set to auto to accommodate content */
+    border-radius: 0.5vw; /* Rounded corners */
+    margin: 0 auto; /* Center the container */
+    padding: 2%; /* Padding for inner spacing */
+}
+
+.title {
+    border-bottom: 1px solid black; /* Bottom border for the title section */
+    display: flex; /* Flexbox layout for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    font-size: 2.5vw; /* Responsive font size */
+    font-weight: bold; /* Bold font weight for the title */
+}
+
+.title p {
+    font-weight: 400; /* Regular font weight for the paragraph under the title */
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+.data {
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.name {
+    display: flex; /* Flexbox layout for name inputs */
+    justify-content: space-between; /* Space out name inputs evenly */
+    width: 100%; /* Full width */
+    margin: 2% 0; /* Margin above and below the name section */
+}
+
+.name input {
+    width: 48%; /* Slightly reduce width for spacing */
+    padding: 1.5%; /* Increased padding for better touch targets */
+    border-radius: 0.5vw; /* Rounded corners for inputs */
+    outline: none; /* Remove outline on focus */
+    border: 1px solid #ccc; /* Border for better visibility */
+    height: 3.5vh; /* Set height in viewport units */
+}
+
+.name input::placeholder {
+    font-size: 1.2vw; /* Font size for placeholder text */
+}
+
+.dob {
+    margin-top: 3%; /* Margin above the date of birth section */
+    display: flex; /* Flexbox layout for dob selection */
+    flex-direction: column; /* Stack dropdowns vertically */
+    margin-left: 4%; /* Margin on the left side */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.dob select {
+    width: 30%; /* Width of the dropdowns for day, month, year */
+    padding: 1%; /* Padding inside the dropdown */
+    border-radius: 0.5vw; /* Rounded corners for dropdowns */
+    font-size: 1.5vw; /* Font size for dropdown text */
+}
+
+.gender {
+    display: flex; /* Flexbox layout for gender selection */
+    align-items: center; /* Center items vertically */
+    margin: 1% 4%; /* Margin for spacing */
+    justify-content: space-between; /* Space items evenly */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.gender-select {
+    height: 4.5vh; /* Height of the gender select input */
+    width: 30%; /* Width of the gender select input */
+    border-radius: 0.5vw; /* Rounded corners for gender input */
+    background-color: white; /* Background color for the select input */
+    font-size: 1.4vw; /* Font size for gender input */
+}
+
+.user-info {
+    width: 100%; /* Full width for user info section */
+    display: flex; /* Flexbox layout for user info inputs */
+    flex-direction: column; /* Stack inputs vertically */
+    margin: 4% 0; /* Margin above and below the user info section */
+}
+
+.user-info input {
+    width: 90%; /* Width of the user info input fields */
+    padding: 1.5%; /* Increased padding for better touch targets */
+    border-radius: 0.5vw; /* Rounded corners for inputs */
+    outline: none; /* Remove outline on focus */
+    border: 1px solid #ccc; /* Border for visibility */
+    height: 4vh; /* Height of the input fields */
+}
+
+#password {
+    margin: 1.5% 0; /* Margin above and below the password input */
+}
+
+#upload-image {
+    font-size: 1.4vw; /* Font size for the upload image input */
+    width: 100%; /* Full width */
+    text-overflow: ellipsis; /* Ellipsis for overflow text */
+    overflow: hidden; /* Hide overflow content */
+    height: 4vh; /* Height of the upload image input */
+}
+
+.terms-and-condition {
+    display: flex; /* Flexbox layout for terms and conditions section */
+    width: 100%; /* Full width */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.terms-and-condition p {
+    width: 90%; /* Width of the paragraph in terms section */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 1.3vw; /* Font size for terms text */
+}
+
+#signup-button {
+    width: 80%; /* Width of the signup button */
+    margin: 4% auto; /* Center the button and add margin */
+    height: 5vh; /* Set height in viewport units */
+    border: none; /* Remove default border */
+    border-radius: 0.5vw; /* Rounded corners for the button */
+    font-size: 1.4vw; /* Font size for button text */
+    font-weight: bold; /* Bold font weight for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+}
+
+.redirect-login {
+    font-size: 1.4vw; /* Font size for the redirect login text */
+    display: flex; /* Flexbox layout for redirect section */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.redirect-login input {
+    border: none; /* Remove default border */
+    background-color: transparent; /* Transparent background */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.4vw; /* Font size for input */
+    padding-left: 1%; /* Padding on the left */
+    color: blue; /* Text color for the redirect link */
+    text-decoration: underline; /* Underline for the redirect text */
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 95%; /* Adjust width on smaller screens */
+    }
+    
+    .title, .title p {
+        font-size: 4vw; /* Adjust font size on smaller screens */
+    }
+
+    .name input,
+    .dob select,
+    .gender-select,
+    .user-info input {
+        width: 100%; /* Full width inputs on smaller screens */
+    }
+    
+    #signup-button {
+        height: 8vh; /* Adjust button height on smaller screens */
+    }
+}

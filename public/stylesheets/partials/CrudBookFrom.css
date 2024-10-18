@@ -1,0 +1,77 @@
+
+
+.crud-container{
+  width: 100%;
+  height: 93%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  margin-top: 3%;
+
+}
+.crud-operation-form{
+  width: 40%;
+  height: 70%;
+  max-height: 70%;
+  background-color: orange;
+  flex-direction: column;
+  border-radius: .5vw;
+}
+.form-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 10%;
+  max-height: 10%;
+  font-size:2vw;
+  font-size: auto;
+  font-weight: bold;
+}
+.form-selection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  min-height: 5%;
+  height: 8%;
+  max-height: 8%;
+
+}
+.form-selection select{
+  width: 50%;
+  font-size: 1.3vw;
+  border-radius: .5vw;
+}
+
+.form-data{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  margin-top: 5%;
+
+ 
+}
+.form-data input{
+  width: 70%;
+  height: 40%;
+  max-height: 40%;
+  border-radius: .5vw;
+margin-bottom: 3%;
+outline: none;
+border: none;
+padding-left: 3%;
+font-size: 1vw;
+}
+.form-data input::placeholder{
+font-size: 1.1vw;
+}
+
+.msg{
+  margin-bottom: 1%;
+}

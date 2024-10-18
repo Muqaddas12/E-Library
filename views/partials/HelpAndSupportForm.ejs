@@ -1,0 +1,34 @@
+<div class="hsf">
+   <div class="profile-image">
+     <form action="/UploadImage" method="post">
+        <img src="<%-locals.profileimage%>" alt="">
+
+        <div class="upload-button">
+            <input type="submit" value="upload">
+        </div>
+     </form>
+   </div>
+
+   <form action="" method="post">   
+     <div class="personal-details">
+        <h1>Personal Details</h1>
+       <div class="user-personal-details">
+         <div class="label-group">
+            <label for="FirstName">First Name:</label>
+            <label for="LastName">Last Name:</label>
+            <label for="Email">Email Address:</label>
+            <label for="Username">Username:</label>
+            <label for="MobileNumber">Mobile Number:</label>
+            
+        </div>
+        <div class="personal-input-group">
+          <input name="firstname" type="text" placeholder="Enter First Name">
+          <input name="lastname" type="text" placeholder="Enter Last Name">
+          <input name="email" type="text" placeholder="Enter Email Address">
+          <input name="username" type="text" placeholder="Enter Username" >
+          <input name="mobile" type="text" placeholder="Enter Mobile Number">
+        </div>
+       </div>
+    </div>
+   </form>
+</div>

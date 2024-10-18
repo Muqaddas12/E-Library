@@ -1,0 +1,57 @@
+<% 
+// Function to convert date from MM/DD/YYYY to YYYY-MM-DD
+function formatDateForInput(dateString) {
+    const [month, day, year] = dateString.split('/');
+    return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+}
+%>
+
+<div class="edit-profile">
+    <div class="change-profile-image">
+        <h3>Profile Image:</h3>
+        <form action="/user/UploadImage" method="post" enctype="multipart/form-data">
+            <div class="profile-image">
+                <label for="imageupload">
+                    <img id="userimage" src="<%- locals.profileimage %>" alt="Profile Image">
+                    <img id="edit-image" src="<%- locals.IconPath %>" alt="Edit Image">
+                </label>
+                <input name="userimage" type="file" style="display: none;" id="imageupload" accept="image/*">
+            </div>
+            <input type="submit" value="Change Photo">
+        </form>
+    </div>
+
+    <form action="/user/EditPersonalDetails" method="post" class="edit-personal-details">
+        <div class="fields">
+            <div class="labels">
+                <h3>First Name:</h3>
+                <h3>Last Name:</h3>
+                <h3>Date of Birth:</h3>
+                <h3>Email:</h3>
+                <h3>Username:</h3>
+                <h3>Mobile:</h3>
+                <h3>Gender:</h3>
+                <h3>Address:</h3>
+            </div>
+
+            <div class="inputs">
+                <input type="text" name="firstname" id="firstname" value="<%- locals.userdata.firstname %>" placeholder="Enter your first name">
+                <input type="text" name="lastname" id="lastname" value="<%- locals.userdata.lastname %>" placeholder="Enter your last name">
+                <input type="date" name="dob" id="dob" value="<%= formatDateForInput(locals.userdata.dob) %>" placeholder="Select your date of birth">
+                <input type="email" name="email" id="email" value="<%- locals.userdata.email %>" placeholder="Enter your email">
+                <input type="text" name="username" id="username" value="<%- locals.userdata.username %>" placeholder="Enter your username" readonly>
+                <input type="tel" name="mobile" id="mobile" value="<%- locals.userdata.mobile %>" placeholder="Enter your mobile number">
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male" <%- locals.userdata.gender === 'male' ? 'selected' : '' %>>Male</option>
+                    <option value="female" <%- locals.userdata.gender === 'female' ? 'selected' : '' %>>Female</option>
+                    <option value="other" <%- locals.userdata.gender === 'other' ? 'selected' : '' %>>Other</option>
+                </select>
+                <input type="text" name="address" id="address" value="<%- locals.userdata.address %>" placeholder="Enter your address">
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Save">
+        </div>
+    </form>
+</div>

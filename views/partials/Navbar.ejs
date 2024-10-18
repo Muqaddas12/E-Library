@@ -1,0 +1,25 @@
+<!-- put this navbar after body not in any div
+body tag css 
+ height: 100%;
+    width: 100%;
+    background-color: rgb(208, 223, 252); 
+-->
+<nav>
+        
+      <div class="heading">
+        <img src="../images/menu.png" alt="image not found" id="sidebar" />
+       <div class="title">Readily</div>
+      </div>
+      <form id="search-form" method="post" action="/user/SearchResults" class="search">
+        <img src="../images/search.png" alt="image not found" id="search-icon" />
+        <input type="text" placeholder="Search Here" id="search-input" />
+      </form>  
+      <div class="logout"> 
+         <form id="nav-logout" action="/logout" method="get">
+        <input type="submit" value="logout">
+      </form> 
+    </div> 
+       
+    </nav>
+
+    <script src="../javascripts/SearchResults.js"></script>

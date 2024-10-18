@@ -1,0 +1,11 @@
+<%locals.result.forEach((data)=>{%>
+ 
+<form id="CategoryForm" class="category" action="/SelectedCategoryResults?" method="post">
+        <div class="book-image">
+            <img src="../<%-data.imagepath%>" alt="">
+        </div>
+        <div class="category-name">
+           <p><%-data.category%> </p>
+        </div>
+    </form>
+<% }) %>

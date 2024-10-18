@@ -1,0 +1,37 @@
+<!-- put this form after the side bar code in html 
+ inside root div
+ #root{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+}
+ 
+ -->
+
+<div class="crud-container">
+          <div class="msg" hidden>book added sucessfully</div>
+        <form class="crud-operation-form" action="/crudbook/addbook" method="post" enctype="multipart/form-data">
+        
+          <div class="form-title">
+            Add Book
+          </div>
+          <div class="form-selection">
+            <select name="formSelction" id="">
+              <option value="selectoptions">select operation </option>
+              <option value="AddBook">Add Book</option>
+              <option value="DeleteBook">Delete Book</option>
+            </select>
+          </div>
+          <div class="form-data">
+            <input name="bookid" type="text" placeholder="Enter Book Id" required>
+            <input name="booktitle" type="text" placeholder="Enter Book Title" required>
+            <input name="bookauthor" type="text" placeholder="Enter Author Name" required>
+            <input name="bookgenre" type="text" placeholder="Enter Book Category" required>
+            <input name="bookimage" type="file" accept="image/*"  required>
+            <input name="bookfile" type="file" required accept=".pdf">
+            <input type="submit" value="submit">
+          </div>
+          
+        </form>
+      </div> 

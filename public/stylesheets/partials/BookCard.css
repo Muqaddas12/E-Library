@@ -1,0 +1,58 @@
+
+.book-card{
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    border: 1px solid rgb(245, 245, 245);
+ 
+   max-height: 50vh;
+   max-width: 14vw;
+}
+.book-image{
+
+   display: flex;
+   justify-content: center;
+   margin-top: 2vh;
+}
+.book-image img{
+max-width: 100%;
+max-height: 30vh;
+
+}
+.book-title {
+    font-size: 1.1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-height: 4vh; /* Adjust based on line height to allow for two lines */
+    text-align: center;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    display: -webkit-box; /* Enable flexbox */
+    -webkit-box-orient: vertical; /* Vertical orientation for flexbox */
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.book-author {
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;    /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds ellipsis when text overflows */
+}
+
+.book-author p {
+margin-top: 0;
+    margin-left: 2vh;
+    width: 90%;
+    height: 4vh;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;    /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds ellipsis when text overflows */
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
+
+      
+

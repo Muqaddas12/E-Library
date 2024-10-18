@@ -1,0 +1,21 @@
+ <div class="support">
+        
+           <div class="support-title">
+                <h1>How can we help?</h1>
+            </div>
+        <form class="support-form" action="/user/Support" method="post">
+       <label for="name">Your Name:</label>
+       <input name="name" value="<%-locals.name%>" type="text" readonly>
+       <label for="email">Your Email Address:</label>
+       <input name="email" value="<%- locals.email %>"  type="text" readonly>
+        <label for="problem-name">Problem Name:</label>
+        <input name="problemname" type="text" placeholder="Problem Title" required>
+
+      
+        <label for="problem-description">Problem Description:</label>
+        <textarea name="problemdiscription" rows="4" required placeholder="Enter Problem Discription"></textarea>
+
+        <input id="support-submit" type="submit" value="Submit">
+        </form>
+        <div id="support-massage"></div>
+    </div>

@@ -1,0 +1,54 @@
+
+.sidebar{
+    min-width: 10%;
+   background-color: rgb(155, 150, 150);
+}
+.user-profile{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-profile img{
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+
+}
+.user-greet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+ overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:40%;
+}
+.sidebar-menu a{
+    text-decoration: none;
+    color: black;
+  padding: 6%;
+    font-weight: 500;
+    font-size: 1.5vw;
+      height: 10%;
+    transition: color,font-size,height, .4s;
+ 
+  
+}
+.sidebar-menu a:hover{
+    background-color: white;
+font-size: 1.8vw;
+    height: 12%;
+}
+#help-and-support{
+    height: 30%;
+}
